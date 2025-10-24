@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Junior de Barranquilla</title>
+
+  <!-- Asegúrate de que la ruta sea EXACTA: css/style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h3>JUNIOR DE BARRANQUILLA</h3>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#jugadores">Jugadores</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+  <div class="overlay">
+    <h2>¡Vamos Junior, tu PAPÁ! 🔴⚪🔵</h2>
+    <p>Orgullo del Caribe Colombiano</p>
+    <button id="btnPartidos" class="btn">Ver próximos partidos</button>
+  </div>
+</section>
+
+
+    <section id="historia" class="contenido">
+      <h3>Historia</h3> 
+      <td>El Atlético Junior fue fundado el 7 de agosto de 1924 en Barranquilla, Colombia. Es uno de los clubes más antiguos y populares del país. Ingresó al fútbol profesional en 1948, siendo parte del torneo inaugural del fútbol colombiano.
+Ganó su primer título de liga en 1977.</td>
+    </section>
+
+    <section id="jugadores" class="contenido">
+      <h2>Nuestros Ídolos</h2>
+
+      <article class="card">
+        <img src="img/Pibe.jpeg" alt="Carlos Valderrama" />
+        <h3>Carlos Valderrama</h3>
+        <p>Leyenda del fútbol colombiano y símbolo del Junior.</p>
+      </article>
+
+      <article class="card">
+        <img src="img/Teo.jpeg" alt="Teófilo Gutiérrez" />
+        <h3>Teófilo Gutiérrez</h3>
+        <p>Goleador histórico y referente barranquillero.</p>
+      </article>
+
+       <article class="card">
+        <img src="img/Aficion.webp" alt="Hinchada Aficon" />
+        <h3>Aficion</h3>
+        <p>La aficion mas grande del club.</p>
+      </article>
+
+<!-- // Calendario de partidos -->
+
+<div class="calendario">
+  <h2> Próximos Partidos del Junior</h2>
+  <div class="partido">
+    <p><strong>Junior vs Millonarios</strong></p>
+    <p> Estadio Metropolitano</p>
+    <p> 27 Octubre 2025 — 7:30 PM</p>
+  </div>
+  <div class="partido">
+    <p><strong>Deportivo Cali vs Junior</strong></p>
+    <p> Estadio Palmaseca</p>
+    <p> 2 Noviembre 2025 — 6:00 PM</p>
+  </div>
+  <div class="partido">
+    <p><strong>Junior vs Nacional</strong></p>
+    <p> Estadio Metropolitano</p>
+    <p> 9 Noviembre 2025 — 8:15 PM</p>
+  </div>
+</div>
+
+<!-- // Sección de contacto --> -->
+
+<section class="contacto" id="contacto">
+  <h2>📞 Contáctanos</h2>
+  <p>¿Tienes preguntas, sugerencias o deseas apoyar al Junior? ¡Escríbenos!</p>
+
+  <div class="contenedor-contacto">
+    <div class="info-club">
+      <h3>🏟️ Club Atlético Junior</h3>
+      <p><strong>Dirección:</strong> Estadio Metropolitano Roberto Meléndez, Barranquilla</p>
+      <p><strong>Teléfono:</strong> +57 605 385 8080</p>
+      <p><strong>Correo:</strong> contacto@juniorfc.co</p>
+      <p><strong>Horario:</strong> Lunes a Viernes - 8:00 AM a 5:00 PM</p>
+    </div>
+
+    <form class="formulario-contacto" onsubmit="enviarMensaje(event)">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p> Junior de Barranquilla.</p>
+  </footer>
+
+  <!-- script al final, ruta exacta js/main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>
